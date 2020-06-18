@@ -1,0 +1,79 @@
+ 
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static **** main(String[] args) {System.out.println("ATM GİRİŞ EKRANI");
+
+	
+
+	int bakiye = 1000;
+
+	
+
+	Scanner scan = new Scanner(System.in);
+
+	System.out.println(" 1-BAKİYE YATIRMA \n2-BAKİYE ÇEKME \n3-GÜNCEL BAKİYE");
+
+	
+
+int ıslem= scan.nextInt();
+
+	
+
+	switch (ıslem){
+
+	 case 1:
+
+	 System.out.println("Bakiye yatırmak istediğin miktar:");
+
+	 
+
+	 int ıslem1=scan.nextInt();
+
+	 
+
+	 System.out.println("Bakiyeniz"+ " " +( ıslem1+bakiye));
+
+	 
+
+	break;
+
+	
+
+	case 2:
+
+	System.out.println("Bakiye çekmek istediğiniz miktar");
+
+	int ıslem2 = scan.nextInt();
+
+	if (ıslem2>1000) {
+
+	System.out.println("Yetersiz bakiye");
+
+	}
+
+	else {
+
+	System.out.println("Kalan bakiye  " + (bakiye -ıslem2));
+
+	}
+
+	
+
+	break ;
+
+	
+
+	case 3:
+
+	System.out.println("Güncel bakiyeniz "+ bakiye);
+
+	break;
+
+	}
+
+	}
+
+}
